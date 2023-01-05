@@ -1,0 +1,25 @@
+{
+  "Type": "UnencryptedConfiguration",
+  "NetworkConfigurations": [
+    {
+      "GUID": "{290363da-1eaa-435d-b895-c92b7abf64a6}",
+      "Name": "ProtoVPN",
+      "Type": "VPN",
+      "VPN": {
+        "Type": "L2TP-IPsec",
+        "Host": "129.213.139.207",
+        "AutoConnect": false,
+        "IPsec": {
+          "IKEVersion": 1,
+          "AuthenticationType": "PSK",
+          "PSK": "vpn",
+          "SaveCredentials": true
+        },
+        "L2TP": {
+          "Username": "vpn",
+          "Password": "vpn"
+        }
+      }
+    }
+  ]
+}

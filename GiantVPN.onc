@@ -1,0 +1,31 @@
+{
+  "Type": "UnencryptedConfiguration",
+  "NetworkConfigurations": [
+    {
+      "GUID": "{290363da-1eaa-435d-b895-c92b7abf64a6}",
+      "Name": "GiantVPN",
+      "Type": "VPN",
+      "NameServersConfigType": "Static",
+      "StaticIPConfig": {
+        "NameServers": [
+          "158.101.114.159",
+        ]
+      },
+      "VPN": {
+        "Type": "L2TP-IPsec",
+        "Host": "129.213.130.38",
+        "AutoConnect": false,
+        "IPsec": {
+          "IKEVersion": 1,
+          "AuthenticationType": "PSK",
+          "PSK": "vpn",
+          "SaveCredentials": true
+        },
+        "L2TP": {
+          "Username": "vpn",
+          "Password": "vpn"
+        }
+      }
+    }
+  ]
+}
